@@ -1,18 +1,17 @@
-#ifndef MAMMAL_H_INCLUDED
-#define MAMMAL_H_INCLUDED
+#ifndef REPTILE_H_INCLUDED
+#define REPTILE_H_INCLUDED
 #include <iostream>
 #include <string>
 using namespace std;
 #include "Animal.h"
-class Mammal:public Animal{
+class Reptile:public Animal{
 private:
-    string furColor;
+    bool isVenomous;
 public:
-    Mammal();
-    Mammal(string name, int age, bool isHungry, string furColor);
-    ~Mammal();
-
+    Reptile();
+    Reptile(string name, int age, bool isHungry, bool isVenomous);
+    ~Reptile();
 };
 
 
-#endif // MAMMAL_H_INCLUDED
+#endif // REPTILE_H_INCLUDED
