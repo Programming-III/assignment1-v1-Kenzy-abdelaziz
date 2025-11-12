@@ -1,22 +1,17 @@
-#ifndef ANIMAL_H_INCLUDED
-#define ANIMAL_H_INCLUDED
+#ifndef BIRD_H_INCLUDED
+#define BIRD_H_INCLUDED
 #include <iostream>
 #include <string>
 using namespace std;
-class Animal{
-private:
-    string name;
-    int age;
-    bool isHungry;
-public:
-    void display();
-    void feed();
-    Animal();
-    Animal(string name, int age, bool isHungry);
-    ~Animal();
-    string getName();
-    int getAge();
+#include "Animal.h"
+class Bird:public Animal{
+ private:
+     float wingSpan;
+ public:
+    Bird();
+    Bird(string name, int age,bool isHungry, float wingSpan);
+    ~Bird();
 };
 
 
-#endif // ANIMAL_H_INCLUDED
+#endif // BIRD_H_INCLUDED
